@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(160, 191, 207) !important;
+  position: relative;
+}
+.card {
+  border-radius: 10px;
+  background-color: rgb(60, 60, 60);
+  margin: auto;
+  margin-top: 150px;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  z-index: 1;
+  position: relative;
+  animation: card 3s infinite;
+  animation-direction: normal;
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.avatar {
+  float: left;
+  font-size: 70px;
+  color: rgb(202, 157, 84);
+}
+.line {
+  width: 60px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: rgb(15, 68, 120);
+  float: right;
+  margin-top: 10px;
+}
+.magnify {
+  position: absolute;
+  font-size: 150px; /* بزرگ‌تر کردن آیکون */
+  color: rgba(255, 255, 255, 0.6); /* سفید با کمی شفافیت */
+  z-index: 2;
+  margin-top: -20px;
+  animation: magnify 3s infinite;
+  animation-direction: normal
+}
+#title {
+  text-align: center;
+  font-family: ;
+  color: aliceblue;
+  background-color: rgb(202, 157, 84);
+  background: linear-gradient(
+    128deg,
+    rgba(202, 157, 84, 1) 0%,
+    rgba(60, 60, 60, 1) 57%,
+    rgba(15, 68, 120, 1) 100%
+  );
+  margin-top: 0%;
+  padding: 15px;
+}
+@keyframes card {
+  0% {
+    margin-top: 50px;
+  }
+  /* 50%{
+    margin-top: 100px; */
+
+  100% {
+    margin-top: 250px;
+  }
+}
+@keyframes magnify {
+  0% {
+    margin-left: -20px;
+  }
+  100% {
+    margin-left: 100px;
+  }
+}
